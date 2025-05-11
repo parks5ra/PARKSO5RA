@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "worksans";
+    src: url(../font/WorkSans-VariableFont_wght.ttf);
+    font-weight: 100 900;
+}
+
+@font-face {
+    font-family: "pretendard";
+    src: url(../font/PretendardVariable.woff2);
+    font-weight: 100 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "worksans";
+}
+
+html {
+    /*
+    font-size: 10px;
+    or 
+    font-size: 62.5%;    
+    를 작성해놓으면  
+    1rem=10px 이 설정됨
+    */
+    font-size: clamp(5px, 1vw, 18px);
+}
+
+body {
+    background-color: #fff;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+.wrap {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 999;
+    color: #fff;
+    mix-blend-mode: difference;
+
+}
+.header_left{
+    font-weight: 700;
+}
+.header_wrap {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menubar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-weight: 500;
+    /* 로고에 애니메이션 효과 넣을 시 아래 두개는 주석 처리하기 */
+    user-select: none;
+    pointer-events: none;
+}
+
+.header_right {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.header_right ul {
+    display: flex;
+    justify-content: right;
+    /* gap: 9%; */
+    /* margin-right: -1.2rem; */
+
+}
+
+.header_right li {
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem; 
+    transition-duration: 0.15s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.header_right li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.header_right li a {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.logo ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo li {
+    margin-right: 4px;
+}

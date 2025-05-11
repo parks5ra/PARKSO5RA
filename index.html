@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="js/jquery-3.7.1.min.js.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js" defer></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="img/favi_pink.png">
+  <title>PARK SORA</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="header_wrap">
+        <div class="menubar">
+          <div class="header_left">
+           <a href="http://parks5ra.dothome.co.kr/PARKSORA/"> <h1 class="logo">
+              <ul>
+                <li>PARK</li>
+                <li>SO</li>
+                <li>RA</li>
+              </ul>
+            </h1>
+          </a>
+          </div><!---header_left-->
+
+          <div class="header_right">
+            <ul>
+              <!-- <li>
+                <a href="http://kinfolk.dothome.co.kr/kinfolk_S" target="_blank">WORK</a>
+              </li> -->
+              <!-- <li>
+                <a href="img/PARKSORA_resume.png" target="_blank">RESUME</a>
+              </li> -->
+              <!-- <li>CONTACT</li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <div class="bubble">
+      <div class="mouse-effect">
+        <div class="circle"> </div>
+        <div class="circle-follow"></div>
+      </div>
+
+      <div class="main-txt">HI THERE I AM</div>
+
+      <section class="banner hide-text">
+        <div class="banner-inner">
+          <!-- <div class="top-desc">
+            <h5>Despersion Collisions</h5>
+            <h6>Research & Development</h6>
+            <span></span>
+          </div> -->
+          <!-- <div class="bottom-desc">
+          <div class="left-desc">
+            <h1>X</h1>
+            <div class="desc-inner">
+              <h5>Pink & Rose Gold</h5>
+              <h6>Lighting & Material Study</h6>
+            </div>
+          </div> -->
+          <!-- <div class="middle-desc">
+            <h2>Dynamic Collisions</h2>
+          </div>
+          <div class="right-desc">
+            <h1>01</h1>
+            <div class="desc-inner">
+              <span>Social Links</span>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <canvas class="webgl" id="webgl"></canvas>
+      <div class="canvas-cover"></div>
+      <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'></script>
+      <script src='https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js'></script>
+      <script src='https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/RGBELoader.js'></script>
+      <script src='https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js'></script>
+      <script src='https://cdn.jsdelivr.net/npm/dat.gui@0.7.7/build/dat.gui.min.js'></script>
+      <script src="./script.js"></script>
+    </div>
+
+
+
+    <!---
+    <div class="main_wrap">
+      <div class="main">
+          <div class="h_iam">
+              <div class="hi">HI THERE,</div>
+              <div class="iam">I AM</div>
+          </div>
+        <div class="parksora">PARK SORA</div>
+          <div class="main_img"><img src="img/sora_main_re.png" alt=""></div>
+        </div>
+    </div> -->
+
+
+
+     
+    <div class="about_wrap">
+      <div class="about_park">
+        <span class="about_text">P</span>
+        <span class="about_text">A</span>
+        <span class="about_text">R</span>
+        <span class="about_text">K</span>
+      </div>
+
+      <div class="about_sora">
+        <span class="about_text2">S</span>
+        <span class="about_text2">O</span>
+        <span class="about_text2">R</span>
+        <span class="about_text2">A</span>
+      </div>
+
+      <div class="about_img">
+        <img src="img/0120removebg.svg" alt="">
+        <div class="about_img_gra"></div>
+      </div>
+    </div> <!--about_wrap-->
+        
+    <div class="keyword_wrap">
+      <div class="keyword">
+        <p>진취적</p>
+        <p>ENTERPRISING</p>
+      </div>
+      <div class="keyword">
+        <p>도전적</p>
+        <p>CHALLENGING</p>
+      </div>
+      <div class="keyword">
+        <p>적응력</p>
+        <p>ADAPTABILITY</p>
+      </div>
+      <div class="keyword">
+        <p>소통</p>
+        <p>COMMUNICATION</p>
+      </div>
+      <div class="keyword">
+        <p>책임감</p>
+        <p>RESPONSIBILITY</p>
+      </div>
+    </div> <!--keyword-->
+
+    <div class="text-wrapper">
+      <div>사용자의 관점을 시작으로 브랜드와 상호작용하며,</div>
+      <div>지속적인 경험을 만들어내는 디자인을 하고자 합니다.</div>
+    </div>
+
+    <div class="tool_wrap">
+      <div class="tool_title">TOOL, SKILLS</div>
+      <div class="tool_type_wrap">
+        <div class="tool_type">
+          <div class="tool_type_title">FIGMA</div>
+          <div class="tool_type_content">
+           <p><span>PLUGIN, COMPONENT,</span></p>
+            <p><span>AUTO LAYOUT, PROTOTYPE</span></p>
+          </div>
+        </div>
+    
+        <div class="tool_type">
+          <div class="tool_type_title">PHOTOSHOP</div>
+          <div class="tool_type_content">
+            <p>이미지 편집, 레이어, 마스크, 브러쉬, 펜툴</p>
+          </div>
+        </div>
+    
+        <div class="tool_type">
+          <div class="tool_type_title">ILLUSTRATOR</div>
+          <div class="tool_type_content">
+            <p>패스, 도형작업, 패턴, 브러쉬</p>
+          </div>
+        </div>
+    
+        <div class="tool_type">
+          <div class="tool_type_title">HTML5</div>
+          <div class="tool_type_content">
+            <p>시맨틱태그, 폼 작성, 미디어 삽입,</p>
+            <p>링크 및 네비게이션 구성, 리스트 및 데이터 구성</p>
+          </div>
+        </div>
+
+        <div class="tool_type">
+          <div class="tool_type_title">CSS3</div>
+          <div class="tool_type_content">
+            <p>애니메이션, 미디어 쿼리, <span>FLEX</span> </p>
+          </div>
+        </div>
+    
+        <div class="tool_type">
+          <div class="tool_type_title">JAVASCRIPT</div>
+          <div class="tool_type_content">
+            <p>이벤트 처리, 애니메이션 효과, 반응형 디자인 및 </p>
+            <p>화면 조작, 플러그인 사용 및 확장</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about_btn1">
+      <a href="img/PARKSORA_resume.png" target="_blank">
+        디자인 이력서
+        <svg class="arrow1" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6969 7.875L7.39687 1.575L9 0L18 9L9 18L7.39687 16.425L13.6969 10.125L0 10.125V7.875L13.6969 7.875Z"
+            fill="#F59298" />
+        </svg>    
+      </a>
+    </div>
+    
+    <div class="work_wrap">
+      <div class="work_title">WORK</div>
+      <div class="work"> 
+        <ul>
+          <li>
+            <a href="http://kinfolk.dothome.co.kr/kinfolk_S" target="_blank">
+            <img src="img/work_kinfolk.webp" alt="">
+            <div class="work_name work_name1">
+              KINFOLK
+            </div>            
+            <div class="work_text work_text1">
+              <div class="work_text_info">반응형 리디자인 개인작업</div>
+              <div class="work_text_detail">
+                <div class="work_text_hour">작업기간 : 2024.08.08~2024.08.19 (12D*6H=72H)</div>
+                <p>덴마크 코펜하겐에 본사를 둔 라이프스타일 매거진 브랜드 '킨포크'의 웹사이트를 리뉴얼 하였습니다.</p>
+              </div>
+            </div>
+          </a>
+          </li> 
+
+          <li>
+            <img src="img/work_1_hotel2.jpeg" alt="">
+            <div class="work_name">
+              MANDARIN HOTEL
+            </div>
+          
+            <div class="work_text">
+              <!-- <div class="work_text_info">반응형 리디자인 개인작업</div>
+              <div class="work_text_detail">
+                <div class="work_text_hour">작업기간 : 2024.08.08~2024.08.19 (12D*6H=72H)</div>
+                <p>덴마크 코펜하겐에 본사를 둔 라이프스타일 매거진 브랜드 '킨포크'의 웹사이트를 리뉴얼 하였습니다.</p>
+              </div> -->
+              <!-- <div class="work_text_info comingsoon">COMING SOON</div> -->
+              <div class="work_text_info comingsoon">COMING SOON</div>
+            </div>
+          </li>
+
+          <!-- 아래는 백업용, 위 li들 지우고 아래 살리기 -->
+          <!-- <li>
+            <img src="img/work_1_hotel2.jpeg" alt="">
+            <div class="work_name work_name1">
+              MANDARIN HOTEL
+            </div>
+          
+            <div class="work_text work_text1">
+              <div class="work_text_info">반응형 리디자인 개인작업</div>
+              <div class="work_text_detail">
+                <div class="work_text_hour">작업기간 : 2024.08.08~2024.08.19 (12D*6H=72H)</div>
+                <p>덴마크 코펜하겐에 본사를 둔 라이프스타일 매거진 브랜드 '킨포크'의 웹사이트를 리뉴얼 하였습니다.</p>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <img src="img/work_2_kin3.png" alt="">
+            <div class="work_name">
+              KINFOLK
+            </div>
+            
+            <div class="work_text">
+              <div class="work_text_info">반응형 리디자인 개인작업</div>
+              <div class="work_text_detail">
+                <div class="work_text_hour">작업기간 : 2024.08.08~2024.08.19 (12D*6H=72H)</div>
+                <p>덴마크 코펜하겐에 본사를 둔 라이프스타일 매거진 브랜드 '킨포크'의 웹사이트를 리뉴얼 하였습니다.</p>
+              </div>
+            </div>
+          </li> -->
+
+          <li>
+            <img src="img/work_3_arc.jpg" alt="">
+            <div class="work_name">
+              ARCTERYX
+            </div>
+          
+            <div class="work_text">
+              <!-- <div class="work_text_info">고정형 리디자인 개인작업</div>
+              <div class="work_text_detail">
+                <div class="work_text_hour">작업기간 : 2024.08.08~2024.08.19 (12D*6H=72H)</div>
+                <p>덴마크 코펜하겐에 본사를 둔 라이프스타일 매거진 브랜드 '킨포크'의 웹사이트를 리뉴얼 하였습니다.</p>
+              </div> -->
+              <div class="work_text_info comingsoon">COMING SOON</div>
+            </div>
+          </li>
+        </ul>
+      </div><!--work-->
+    </div><!--work_wrap-->
+
+    <div class="contact_wrap">
+      <div class="contact">
+        <div class="contact_title">Contact Me Anytime</div>
+        <div class="phone">
+          <!-- <div class="phonetitle">+82 10.9934.4597</div> -->
+          <div class="phonenumber">parks5ra@gmail.com</div>
+        </div>
+      </div>
+
+      <div class="copyright">© Park So Ra 2024. All Right Reserved.</div>
+
+      <div class="circle1"></div>
+    </div><!--contact_wrap-->
+  </div><!--wrap-->
+</body>
+
+</html>
