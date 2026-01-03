@@ -50,16 +50,6 @@ gsap.to('.text-wrapper div:nth-child(2)', 0.1, {
 //     $(this).css({'width':'32%'})
 // })
 
-
-$('.work li').mouseover(function () {
-  $(this).find('.work_text').stop().fadeIn(200);
-}).mouseout(function () {
-  $(this).find('.work_text').stop().fadeOut(200);
-})
-
-
-
-
 // fadeInSequence();
 
 // setInterval(function () {
@@ -131,36 +121,50 @@ gsap.from(".tool_title", 1.2, {
 })
 
 $(".tool_type").each(function () {
+  gsap.set(this, {
+    borderRadius: "1rem",
+  })
+
   const toolTypeTitle = $(this).find('.tool_type_title');
   const toolTypeContent = $(this).find('.tool_type_content');
 
   $(this).mouseenter(function () {
-      gsap.to(this, 0.3, {
-        backgroundColor: "#2f2f2f",
-        ease: "power3.out", 
-      });
+    gsap.to(this, 3, {
+      borderRadius: "10rem",
+      ease: "expo.out",
+    })
 
-      gsap.to([toolTypeTitle, toolTypeContent], 0.3, {
-        color: "#fff",
-        opacity: 1,
-        ease: "power3.out",
-      })
+    gsap.to(this, 0.3, {
+      backgroundColor: "#2f2f2f",
+      ease: "power3.out",
+    });
+
+    gsap.to([toolTypeTitle, toolTypeContent], 0.3, {
+      color: "#fff",
+      opacity: 1,
+      ease: "power3.out",
+    })
   }).mouseleave(function () {
-      gsap.to(this, 0.3, {
-        backgroundColor: "#FFE6E7",
-        ease: "expo.out", 
-      });
+    gsap.to(this, 3, {
+      borderRadius: "1rem",
+      ease: "expo.out",
+    })
 
-      gsap.to(toolTypeTitle, 0.3, {
-        color: "#FFAFB4",
-        ease: "expo.out",
-      })
+    gsap.to(this, 0.3, {
+      backgroundColor: "#FFE6E7",
+      ease: "expo.out",
+    });
 
-      gsap.to(toolTypeContent, 0.3, {
-        color: "#000",
-        opacity: 0.4,
-        ease: "expo.out",
-      })
+    gsap.to(toolTypeTitle, 0.3, {
+      color: "#FFAFB4",
+      ease: "expo.out",
+    })
+
+    gsap.to(toolTypeContent, 0.3, {
+      color: "#000",
+      opacity: 0.4,
+      ease: "expo.out",
+    })
   });
 });
 
@@ -209,11 +213,7 @@ $(".tool_type").each(function () {
   
 // });
 
-
-
-
 gsap.registerPlugin(ScrollTrigger);
-
 
 const tl = gsap.timeline({
   scrollTrigger: {
@@ -254,9 +254,8 @@ $(document).ready(function () {
   const btn = $(".about_btn1 a");
   const arrow1 = $(".arrow1");
   
-btn.on("mouseenter", function () {
-    
-    gsap.to(btn, 0.5, {
+  btn.on("mouseenter", function () {
+    gsap.to(btn, 0.4, {
       padding: "1.5rem 2.4rem",
       scale: 1.1,
       backgroundColor: "#000",
@@ -268,15 +267,15 @@ btn.on("mouseenter", function () {
       rotate: -45,       
       ease: "expo.out" 
     });
-});
+  });
 
   btn.on("mouseleave", function () {
-    gsap.to(btn, 0.5, {
+    gsap.to(btn, 0.4, {
       padding: "1.3rem 2rem",
       scale: 1,
       backgroundColor: "#fff",
       color:"#F59298",
-      ease: "power3.out"
+      ease: "power1.out"
     });
 
     gsap.to(arrow1, 0.5, {

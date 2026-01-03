@@ -15,9 +15,6 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: "worksans";
 }
 
 html {
@@ -33,7 +30,9 @@ html {
 
 body {
     background-color: #fff;
+    box-sizing: border-box;
     font-style: normal;
+    font-family: "worksans";
 }
 
 a {
@@ -41,6 +40,8 @@ a {
     color: inherit;
     display: block;
 }
+
+li { list-style: none; }
 
 img {
     width: 100%;
