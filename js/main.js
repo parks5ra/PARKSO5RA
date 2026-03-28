@@ -11,43 +11,38 @@ gsap.ticker.lagSmoothing(0);
 
 
 gsap.to('.text-wrapper div:nth-child(1)', 0.1, {
-    scrollTrigger: {
-        trigger: '.text-wrapper div:nth-child(1)',
-        // start: 'top 90%',
-        // end: 'top 40%',
-        start:'top 90%',
-        end:'top 55%',
-        scrub: 0.1
-    },
-    backgroundSize: '100% 100%',
-    ease: 'none'
+  scrollTrigger: {
+    trigger: '.text-wrapper div:nth-child(1)',
+    // start: 'top 90%',
+    // end: 'top 40%',
+    start:'top 90%',
+    end:'top 55%',
+    scrub: 0.1
+  },
+  backgroundSize: '100% 100%',
+  ease: 'none'
 })
 
 gsap.to('.text-wrapper div:nth-child(2)', 0.1, {
-    scrollTrigger: {
-        trigger: '.text-wrapper div:nth-child(2)',
-        // start: 'top 60%',
-        // end: 'top 20%',
-        start:'top 80%',
-        end:'top 50%',
-        scrub: 0.1
-    },
-    backgroundSize: '100% 100%',
-    ease: 'none'
+  scrollTrigger: {
+    trigger: '.text-wrapper div:nth-child(2)',
+    // start: 'top 60%',
+    // end: 'top 20%',
+    start:'top 80%',
+    end:'top 50%',
+    scrub: 0.1
+  },
+  backgroundSize: '100% 100%',
+  ease: 'none'
 })
 
 
 // $('.work li').mouseover(function(){
-//     $(this).find('.work_name').stop().fadeOut(200);
-//     $(this).find('.work_text').stop().fadeIn(200);
-//     $(this).css({'width':'90%'})
-
+//   $(this).find('.work_text').stop().fadeIn(200);
 // })
 
 // $('.work li').mouseout(function(){
-//     $(this).find('.work_name').stop().fadeIn(200);
-//     $(this).find('.work_text').stop().fadeOut(200);
-//     $(this).css({'width':'32%'})
+//   $(this).find('.work_text').stop().fadeOut(200);
 // })
 
 // fadeInSequence();
