@@ -157,7 +157,7 @@ $(".tool_type").each(function () {
 
     gsap.to(toolTypeContent, 0.3, {
       color: "#000",
-      opacity: 0.4,
+      opacity: 0.6,
       ease: "expo.out",
     })
   });
