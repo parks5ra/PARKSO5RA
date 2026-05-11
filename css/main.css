@@ -53,7 +53,6 @@
      rgba(255, 255, 255, 1)85%
      );
 }
-/*그라디언트 기본 : to bottom */
 
 .about_sora{
     position: absolute; 
@@ -130,8 +129,6 @@ align-items: center;
     margin-left: 0.6rem;
 }
 
-
-
 .self_intro{
     font-size: 1.5rem;
     text-align: center;
@@ -156,12 +153,8 @@ align-items: center;
 }
 
 .keyword_wrap{
-    margin: 0 auto;
-    /* width: 80%; */
     width: 86%;
-    
-    /* display: grid;
-    justify-items: end; */
+    margin: 0 auto;
 }
 
 .keyword_wrap div{
@@ -186,7 +179,6 @@ align-items: center;
 
 .work_wrap {
     width: 100%;
-    /* aspect-ratio: 1 / 0.5; */
     margin-top: 6rem;
 }
 
@@ -194,11 +186,7 @@ align-items: center;
     font-size: 8rem;
     font-weight: 600;
     text-align: center;
-  
-    /* letter-spacing: 1rem; */
 }
-
-
 .work {
     margin: 0 auto;
     margin-top: 2%;
@@ -224,11 +212,6 @@ align-items: center;
     isolation: isolate;
 }
 
-/* .work li:nth-child(1){
-    width: 100%;
-    aspect-ratio: 1 / 0.30;
-} */
-
 .work_name {
     position: absolute;
     inset: 0;
@@ -240,6 +223,7 @@ align-items: center;
     color: #fff;
     z-index: 1;
 }
+
 .work_name1 {
     left: 4%; 
 }
@@ -248,6 +232,7 @@ align-items: center;
     font-size: 2rem;
     font-weight: 600;
 }
+
 .work_text {
     display: flex;
     flex-direction: column;
@@ -256,8 +241,6 @@ align-items: center;
     position: absolute;
     inset: 0;
     color: #fff;
-    /* background-color: rgba(0, 0, 0, 0.8); */
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85)); */
     font-family: "pretendard";
     font-size: 1.1rem;
     font-weight: 400;
@@ -269,7 +252,6 @@ align-items: center;
 .work li:hover .gradient_box {
     opacity: 1;
 }
-
 .work_text_info{
     display: flex;
     align-items: center;
@@ -334,32 +316,22 @@ align-items: center;
 
 .contact_wrap {
     width: 100%;
-    /* aspect-ratio: 1 / 0.40; */
     height: 100vh;
     min-height: 500px;
     margin-top: 15%;
     position: relative;
 }
 
-
 .contact {
     margin: 0 auto;
-   
     width: 50%;
-
-    /* aspect-ratio: 1 / 0.45; */
-    /* aspect-ratio: 1 / 0.3; */
     position: absolute;
-    /* top: 50%; 변경전 원래 */
+    /* top: 50%; */
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background-color: #202020; */
-    /* border-radius: 4rem; */
     background-color: blue;
-
     /* color:#fff; */
-
 }
 
 .contact_title {
@@ -441,13 +413,10 @@ align-items: center;
     font-size: 1.1rem;
     margin-bottom: 1%;
     margin-top: 4%;
-    /* color: #fff; */
     user-select: none;
     pointer-events: none;
 
 }
-
-
 
 /* .circle1 {
     position: fixed;
@@ -502,43 +471,46 @@ align-items: center;
     opacity: 0.6;
     font-family: "pretendard";
 }
+
 .tool_type_content span{
     font-family: "worksans";
 }
+
 .tool_type_content p:nth-child(2) { 
     margin-top: 0.4rem; 
 }
 
-
 .about_park{
     display: flex;
-
 }  
+
 .about_text {
     display: inline-block;
     opacity: 0;
     transform: translateY(50px);
 }
+
 .about_sora{
     display: flex;
-
 }  
+
 .about_text2{
     display: inline-block;
     opacity: 0;
     transform: translateY(50px);
 }
+
 .about_img{
     display: inline-block;
     /* opacity: 0; */
 }
-
 
 .work a{
     display: block;
     width: 100%;
     height: 100%;
 }
+
 .work li{
     overflow: hidden;
 }
